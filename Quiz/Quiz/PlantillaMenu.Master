@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PlantillaMenu.Master.cs" Inherits="Quiz.Menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="CSS/Menu.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+                <div>
+<nav>
+  <a href="Inicio.aspx">Inicio</a>
+  <a href="School.aspx">School</a>
+  <a href="Class.aspx">Class</a>
+  <a href="#about">Salir</a>
+
+ </nav>
+    </div>
+      <h2></h2>
+      <br />
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
